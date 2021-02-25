@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit : 10
+    labels :
+      - "\U0001F4E6 Type/Dependencies"
+
+  - package-ecosystem: cargo
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    labels:
+    - "\U0001F4E6 Type/Dependencies"

@@ -1,0 +1,15 @@
+[package]
+name = "super-match"
+version = "0.1.0"
+authors = ["Teakowa Gatanothor O'deorain <hub+git@teakowa.dev>"]
+edition = "2018"
+
+repository = "https://github.com/UnionMusic/super-match"
+readme = "README.md"
+license = "Apache-2.0/Anti-996"
+exclude = [".git*", "CODEOWNERS", "LICENSE*", "README.md"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+calamine="0.18.0"
