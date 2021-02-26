@@ -12,7 +12,7 @@ async fn main() -> std::io::Result<()> {
             .wrap(middleware::Logger::default())
             .service(web::resource("/").to(index))
     })
-        .bind("127.0.0.1:8080")?
-        .run()
-        .await
+    .bind("127.0.0.1:8080")?
+    .run()
+    .await
 }
