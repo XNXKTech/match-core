@@ -1,7 +1,7 @@
 use actix::MailboxError;
 use actix_web::{error::ResponseError, http::StatusCode, HttpResponse};
-use failure::{Fail};
-use serde_json::{Map as JsonMap, Value as JsonValue, json};
+use failure::Fail;
+use serde_json::{json, Map as JsonMap, Value as JsonValue};
 use std::convert::From;
 use validator::ValidationErrors;
 
