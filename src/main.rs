@@ -1,18 +1,20 @@
-use actix_web::{middleware, web, App, HttpRequest, HttpServer};
+mod app;
 
-async fn index(req: HttpRequest) -> &'static str {
-    println!("REQ: {:?}", req);
-    "Hello world!"
-}
+use std::env;
 
-#[actix_web::main]
-async fn main() -> std::io::Result<()> {
-    HttpServer::new(|| {
-        App::new()
-            .wrap(middleware::Logger::default())
-            .service(web::resource("/").to(index))
-    })
-    .bind("127.0.0.1:8080")?
-    .run()
-    .await
+fn main() {
+    dotenv::dotenv().ok();
+
+    if env::var("RUST_LOG").ok().is_none() {
+        env::set_var("RUST_LOG", "conduit=debug,actix_web=info");
+    }
+    env_logger::init();
+
+    let sys = actix::System::new("super-match");
+
+    let bind_address = env::var("BIND_ADDRESS").expect("BIND_ADDRESS is not set");
+
+    app::run(bind_address).expect("App run failed");
+
+    let _ = sys.run();
 }
