@@ -11,7 +11,7 @@ fn main() {
     }
     env_logger::init();
 
-    let sys = actix::System::new("super-match");
+    let sys = actix::System::new();
 
     let bind_address = env::var("BIND_ADDRESS").expect("BIND_ADDRESS is not set");
 
