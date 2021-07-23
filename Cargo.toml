@@ -17,7 +17,7 @@ actix-web = "3"
 actix-http="2"
 calamine="0.18.0"
 dotenv="0.15.0"
-env_logger="0.8.4"
+env_logger="0.9.0"
 failure="0.1.8"
 futures = "0.3.15"
 serde = { version = "1.0", features = ["derive"] }
