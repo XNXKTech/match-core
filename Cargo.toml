@@ -19,7 +19,7 @@ calamine="0.18.0"
 dotenv="0.15.0"
 env_logger="0.9.0"
 failure="0.1.8"
-futures = "0.3.17"
+futures = "0.3.18"
 serde = { version = "1.0", features = ["derive"] }
 serde_derive = "1.0.91"
 serde_json = "1.0.71"
