@@ -14,7 +14,7 @@ exclude = [".git*", "CODEOWNERS", "LICENSE*", "README.md"]
 [dependencies]
 actix="0.12.0"
 actix-web = "3"
-actix-http="2"
+actix-http="3"
 calamine="0.18.0"
 dotenv="0.15.0"
 env_logger="0.9.0"
