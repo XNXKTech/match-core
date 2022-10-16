@@ -69,7 +69,7 @@ jobs:
         with:
           rust-version: ${{ matrix.rust }}
 
-      - uses: Swatinem/rust-cache@v1
+      - uses: Swatinem/rust-cache@v2
 
       - run: cargo check --verbose --workspace --all-features
 
@@ -91,7 +91,7 @@ jobs:
         with:
           rust-version: ${{ matrix.rust }}
 
-      - uses: Swatinem/rust-cache@v1
+      - uses: Swatinem/rust-cache@v2
 
       - run: cargo bench --verbose --workspace --all-features
 
@@ -114,7 +114,7 @@ jobs:
           profile: minimal
           toolchain: ${{ matrix.rust }}
 
-      - uses: Swatinem/rust-cache@v1
+      - uses: Swatinem/rust-cache@v2
 
       - run: cargo build --release
 
@@ -136,6 +136,6 @@ jobs:
         with:
           rust-version: ${{ matrix.rust }}
 
-      - uses: Swatinem/rust-cache@v1
+      - uses: Swatinem/rust-cache@v2
 
       - run: cargo test --verbose --workspace --all-features
