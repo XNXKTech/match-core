@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2](https://github.com/XNXKTech/match-core/compare/v1.0.1...v1.0.2) (2022-10-20)
+
+
+### :bug: Bug Fixes
+
+* **deps:** update rust crate calamine to 0.19.0 ([#97](https://github.com/XNXKTech/match-core/issues/97)) ([035b80f](https://github.com/XNXKTech/match-core/commit/035b80fe86c779ba96d107d5391484b3d32489a4))
+
 ## [1.0.1](https://github.com/XNXKTech/match-core/compare/v1.0.0...v1.0.1) (2022-08-19)
 
 
