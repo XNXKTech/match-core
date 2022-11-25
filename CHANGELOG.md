@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3](https://github.com/XNXKTech/match-core/compare/v1.0.2...v1.0.3) (2022-11-25)
+
+
+### :bug: Bug Fixes
+
+* **deps:** update rust crate env_logger to 0.10.0 ([#104](https://github.com/XNXKTech/match-core/issues/104)) ([50e157d](https://github.com/XNXKTech/match-core/commit/50e157d60ac2d09cc3ee6bc4ad3d05c8a0d3ece0))
+
 ## [1.0.2](https://github.com/XNXKTech/match-core/compare/v1.0.1...v1.0.2) (2022-10-20)
 
 
